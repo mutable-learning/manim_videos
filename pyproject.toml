@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "manim-videos"
+version = "0.1.0"
+description = "Source code for videos made with Manim and shown on the Mutable Learning Youtube channel"
+authors = ["mutable <mutable.learning@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "manim_videos"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+manim = ">=0.17.3"
+manim-weighted-line = ">=0.1.0, <1.0.0"
+networkx = ">=2.5,<3.03.1"
+manim-voiceover = "^0.3.3.post0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

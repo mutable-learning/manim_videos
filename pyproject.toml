@@ -12,7 +12,7 @@ python = ">=3.8,<3.12"
 manim = ">=0.17.3"
 manim-weighted-line = ">=0.1.0, <1.0.0"
 networkx = ">=2.5,<3.03.1"
-manim-voiceover = "^0.3.3.post0"
+manim-voiceover = {extras = ["gtts", "recorder"], version = "^0.3.3.post0"}
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.7.0"

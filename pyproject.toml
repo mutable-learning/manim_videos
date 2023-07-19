@@ -5,7 +5,7 @@ description = "Source code for videos made with Manim and shown on the Mutable L
 authors = ["mutable <mutable.learning@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "manim_videos"}]
+packages = [{ include = "manim_videos" }]
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.12"
@@ -16,7 +16,12 @@ networkx = ">=2.5,<3.03.1"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.7.0"
-manim-voiceover = {extras = ["gtts", "recorder"], version = "^0.3.3.post0"}
+manim-voiceover = { extras = [
+    "gtts",
+    "recorder",
+    "transcribe",
+], version = "^0.3.3.post0" }
+torch = ">=2.0.0, !=2.0.1"
 
 [build-system]
 requires = ["poetry-core"]
